@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        @font-face {
+            font-family: IranYekan;
+            src: url(Font/Qs_Iranyekan\ medium.ttf);
+        }
+        *{
+            font-family: IranYekan;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        body{
+            background-color: #f2f5f8 ; 
+        }
+        .class1 , .class2 , .class3 , .class4 , .class5 , .class6 , .class7 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: -24px;
+        }
+        .li1 , .li2 , .li3{
+            background-color: #fff; 
+            padding: 15px 7px;
+            border: 1px  solid inherit;
+            border-radius: 12px;
+            width: 22%;
+            max-width: 25%;
+            margin: 40px;
+        }
+        .anti-collapse{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .li-desc{
+            width:70%;
+            direction: rtl;
+            margin-top: 6px;
+        }
+        .li1 img{
+            margin-top: -9px;
+        }
+        .li-desc p{
+            max-width: 100%;
+            margin-top: 3px;
+            font-size: 14px;
+            font-weight: 100;
+            color: darkgray;
+        }
+        img{
+            transform: scale(1);
+            float: right;
+            transform-origin: right bottom;
+        }
+
+
+        @media screen  and (max-width:1086px){
+            .anti-collapse{
+                display: flex;
+                flex-direction: column;
+            }
+            .float-right{
+                width: 200px;
+                margin: 0 auto;
+            }
+            .float-right img{
+                padding-right: 55px; 
+                min-width: 100px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .float-left{
+                width: 200px;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:867px){
+            
+            .float-right img{
+                padding-right: 80px; 
+                min-width: 100px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .li-desc p{
+                display: none;
+            }
+            .float-right img{
+                min-width: 30px;
+            }
+            .float-left{
+                margin: 0 auto;
+                text-align: center;
+                width: 100px;
+                font-size: 12px;
+            }
+            .li-desc{
+                width:100%;
+                direction: rtl;
+                margin-top: 6px;
+            }
+            
+            .li1 , .li2 , .li3{
+                padding: 0; 
+                max-width: 20%;
+            }
+        }
+        @media screen and (max-width:775px){
+            .float-right img{ 
+                padding-right: 100px; 
+                margin: 0 auto;
+                text-align: center;
+            } 
+        }
+        @media screen and (max-width:615px){
+            .li1 , .li2 , .li3{
+                margin-right: 10px; 
+                margin-left: 10px;
+                max-width: 25%;  
+            }
+            .float-right img{ 
+                padding-right: 110px; 
+                margin: 0 auto;
+                text-align: center;
+            } 
+        }
+    </style>
+</head>
+<body>
+<main4>
+
+    
+    <div class="class1">
+        <div class="li1">
+                <div class="anti-collapse">
+                    <div class="float-right">
+                        <img src="images/spdiscount.png"  width="63px" alt="">
+                    </div>
+                    <div  class="float-left li-desc">
+                        <h4>سوپرمارکت آنلاین</h4>
+                        <p>تهیه اقلام روزانه با اسنپ</p>
+                    </div>
+                </div>
+        </div>
+        <div class="li2">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/bike.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>پیک موتوری</h4> 
+                    <p>حمل و نقل با اسنپ</p>
+                </div>
+            </div>
+        </div>
+        <div class="li3">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/taxi.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>تاکسی اینترنتی</h4> 
+                    <p style="font-size: 13px ; width: 100%; "> امکان درخواست آنلاین خودرو با اسنپ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="class2">
+
+        <div class="li1">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/spdiscount.png"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4> اسنپ اکسپرس</h4>
+                    <p>تحویل کمتر از 30 دقیقه </p>
+                </div>
+            </div>
+        </div>
+        <div class="li2">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/moving.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4> دریافت وانت</h4> 
+                    <p>حمل و نقل با اسنپ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="li3">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/food.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4> سفارش آنلاین غذا</h4> 
+                    <p style="font-size: 13px ; width: 100%; "> سفارش غذا،نان و شیرینی با اسنپ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="class3">
+
+        <div class="li1">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/insdiscount.png"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4> بیمه</h4>
+                    <p>خرید آنلاین بیمه با اسنپ</p>
+                </div>
+            </div>
+        </div>
+        <div class="li2">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/intflight.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>بلیط پرواز خارجی</h4> 
+                    <p>گردشگری با اسنپ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="li3">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/fdom-t.png"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>بلیط پرواز داخلی</h4> 
+                    <p style="font-size: 13px ; width: 100%; ">گردشگری با اسنپ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="class4">
+
+        <div class="li1">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/doctor.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4> پزشک و مشاور</h4>
+                    <p>درمان با اسنپ</p>
+                </div>
+            </div>
+        </div>
+        <div class="li2">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/hotel.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>رزرو اقامتگاه</h4> 
+                    <p>گردشگری با اسنپ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="li3">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/hotel (1).svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>رزرو هتل</h4> 
+                    <p style="font-size: 13px ; width: 100%; ">گردشگری با اسنپ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="class5">
+
+        <div class="li1">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/pharmacy.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>داروخانه</h4>
+                    <p>داروخانه آنلاین اسنپ</p>
+                </div>
+            </div>
+        </div>
+        <div class="li2">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/train.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>بلیط قطار</h4> 
+                    <p>گردشگری با اسنپ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="li3">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/bus.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>بلیط اتوبوس</h4> 
+                    <p style="font-size: 13px ; width: 100%; ">گردشگری با اسنپ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="class6">
+
+        <div class="li1">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/shop.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>فروشگاه</h4>
+                    <p> خرید و فروش از فروشگاه های معتبر شهر</p>
+                </div>
+            </div>
+        </div>
+        <div class="li2">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/driver.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>ثبت نام راننده</h4> 
+                    <p>ثبت نام تاکسی اینترنتی اسنپ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="li3">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/moving.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>اسباب کشی منزل</h4> 
+                    <p style="font-size: 13px ; width: 100%; ">حمل و نقل با اسنپ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="class7">
+
+        <div class="li1">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/club.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>اسنپ! کلاب</h4>
+                    <p>باشگاه مشتریان اسنپ!</p>
+                </div>
+            </div>
+        </div>
+        <div class="li2">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/Credit.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>سرویس اعتباری</h4> 
+                    <p>پرداخت با اسنپ</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="li3">
+            <div class="anti-collapse">
+                <div class="float-right">
+                    <img src="images/investment.svg"  width="63px" alt="">
+                </div>
+                <div class="float-left li-desc">
+                    <h4>سرمایه گذاری</h4> 
+                    <p style="font-size: 12px ; width: 100%; ">خدمات غیرحضوری بورس و سرمایه گذاری</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</main4>
+</body>
+</html>

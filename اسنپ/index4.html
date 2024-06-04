@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+    </style>
+</head>
+<body>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+            <img src="images/Market_carousel.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="images/Food_carousel.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <img src="images/Driver_carousel.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/Club_carousel.jpg" style="width:100%">
+            </div>
+        
+            
+        </div>
+        <br>
+        
+        <div style="text-align:center ; margin-top: -50px; z-index: 1; position: absolute; left: 46%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+</body>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.querySelectorAll(".dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  dots.forEach(item => item.classList.contains('active')? item.style.backgroundColor = "#333" : item.style.backgroundColor="#fff")
+}
+</script>
+</html>
