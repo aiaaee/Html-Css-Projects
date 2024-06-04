@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Bimeh</title>
+    <style>
+        @font-face {
+            font-family: 'IranYekan';
+            src: url(Font/Qs_Iranyekan\ medium.ttf);
+        }
+        *{
+            font-family: IranYekan;
+        }
+        header::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .float-right{
+            float: right;
+        }
+        .float-left{
+            float: left;
+        }
+        .href_image{
+            margin-top: 22px;
+            margin-right: 12px;
+            width: 190px;
+            max-height: 45px;
+            display: block;
+        }
+        .float-left-header ul{
+            list-style-type: none;
+            display: flex;
+        }
+        .float-left-header li a{
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            padding-left: 14px;
+            text-align: right;
+        }
+        .float-right-header ul{
+            display: flex;
+            list-style-type: none;
+        }
+        .float-right-header li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            text-align: right;
+        }
+        .float-right-header li:not(li:last-child){
+            padding: 10px;
+            padding-right: 26px;
+        }
+        .float-right-header li:last-child{
+            border-right: 1px solid gray;
+            margin-top: 7px;
+            height: 25px;
+            vertical-align: center;
+        }
+        .fs-7{
+            font-size: 13px;
+        }
+        @media screen and (max-width:1200px) {
+            .float-left-header button{
+                font-size: 13px;
+                width: 160px;
+                height: 60px;
+            }
+            
+        }
+        .icon_span{
+            display: none;
+        }
+        @media screen and (max-width:1000px) {
+            .float-left-header li , .float-right-header li{
+                display: none;
+            }
+            .href_image{
+                position: absolute;
+                left: 350px;
+            }
+            .icon_span{
+                margin-top: 3px;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width:765px){
+            .href_image{
+                width: 140px;
+            }
+            .float-left-header button{
+                width: 100px;
+                font-size: 12px;
+            }
+            .float-left-header button img{
+                display: none;
+            }
+        }   
+        @media screen and (max-width:740px){
+            .href_image{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper" class="container">
+        <header class="mt-3">
+            <div class="d-flex justify-content-between"> 
+                <div class="float-left-header d-flex" style="float: left;">
+                    <button style=" background-color: #64b054; color: #ffffff;" class=" ps-md-3 fs-7 pe-md-3 pt-lg-1 pb-lg-1 rounded-3  btn m-2">ورود | ثبت نام<img class="ms-2 border border-1 rounded-4 bg-light" src="photos/person-4.svg" width="20" alt=""></button>
+                    <ul class="m-3 p-2">
+                        <li style="padding-left: 15px; padding-right: 18px;">
+                            <a href="">پیگیری خرید</a>
+                        </li>
+                        <li>
+                            <a href="">سوالی دارید؟</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-end float-right-header" style="float: right;">
+                    <ul class="d-flex m-3 ">
+                        <li>
+                            <a style="color: purple;" href="">کسب درآمد کنید</a>
+                        </li>
+                        <li>
+                            <a href="">مجله بیمه </a>
+                        </li>
+                        <li>
+                            <a href="">بیمه ها</a>
+                        </li>
+                        <li>
+                        </li>
+                    </ul>
+                    <a  class="href_image"  >
+                        <img src="photos/bimeh.svg"/>
+                    </a>
+                    <span class="icon_span">
+                        <img src="photos/R.png"  class="menu_icon border border-1  p-2 m-2 rounded-2" style="padding: 10px; " width="50px" alt="">
+                    </span>
+                    
+                </div>
+            </div>
+        </header>
+    </div>
+    <hr style="color: gray;"/>
+    <main>
+        <div class="container">
+            <center>
+                <h3 class="" style="color: purple; font-weight: 590;">بیمه دات کام : استعلام ، مقایسه و خرید بیمه </h3>
+            </center>
+
+        </div>
+    </main>
+
+</body>
+</html>
