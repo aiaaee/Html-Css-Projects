@@ -1,0 +1,172 @@
+@font-face {
+    font-family: roya;
+    src: url(font/fonts/fonts/RoyaR.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: roya;
+    src: url(font/fonts/fonts/RoyaB.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    direction: rtl;
+    font-family: roya;
+    background-color: #eee;
+}
+input , select , textarea{
+    font-family: inherit;
+    font-size: inherit;
+}
+#nav{
+    background-color: black ; 
+    height: 50px;
+    border-bottom: 1px solid white;
+    position: fixed;
+    /* پوزیشن فیکس برای جا به جا نشدن در صفحه به کار میرود  */
+    width: 100%;   
+}
+#nav span{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-image: url(photo/htmlproject/menu.png); 
+    border: 1px solid gray;
+    margin: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#nav ul{
+    background-color: black;
+    display: none;
+    position: absolute;
+    width: 100% ;
+    top : 51px ; 
+}
+#nav li{
+    line-height: 2.5em;
+}
+#nav a{
+    color: #ccc;
+    font-size:18px ;
+    text-decoration: none;
+    display: block;
+    padding-right: 20px;
+    border-bottom: 1px solid gray;
+    transition: 0.2s;
+}
+#nav a:hover{
+    background-color: #cc5;
+    color: #222;
+}
+#header{
+    color: white;
+    padding: 10px;
+    margin-top: 51px;
+    min-height: 320px;
+    background-image: url(photo/htmlproject/header.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#header h1{
+    margin: 20px;
+}
+#header p{
+    margin: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+#products h2{
+    max-width: 360px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 36px;
+}
+.item{
+    margin: 15px auto;
+    text-align: center;
+    background-color: white;
+    max-width: 480px;
+}
+.item:hover{
+    box-shadow: 0 0 3px 1px black ;
+}
+.item img{
+    display: block;
+    width: 100%;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+.item h3{
+    padding:35px ;
+}
+#newsletter , #sitemap{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 140px;
+}
+#newsletter input[type="email"]{
+    display: block;
+    margin: 60px auto 10px auto;
+    width: 250px;
+    padding: 5px 15px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+#sitemap li{
+    line-height: 2.5em;
+    float: right;
+    margin: 10px 20px;
+    width: 130px;
+}
+#sitemap a{
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    transition: 0.2s;
+}
+#sitemap a:hover{
+    color: #fff;
+}
+@media screen and (min-width:720px) {
+    #nav{
+        right: 0;
+    }
+    #nav span{
+        display: none;
+    }
+    #nav li{
+        float: right;
+        text-align: center;
+        margin: 0 10px;
+    }
+    #nav ul{
+        display: block !important;
+        margin: 5px auto;
+        position: static;
+        max-width: 1280px;
+    }
+    #nav a{
+        padding: 0 20px;
+        border-bottom: none;
+    }
+}
+@media screen and (min-width:960px) {
+    #header p{
+        font-size: 22px;
+    }
+}
+@media screen and (min-width:1140px){
+    #header h1{
+        font-size: 36px;
+    }
+    #header p{
+        font-size: 26px;
+    }
+}
