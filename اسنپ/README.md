@@ -4,4 +4,7 @@ A project of the Snap company website that was designed.
 
 
 In this project, we were able to use HTML and CSS, as well as Bootsrap, to style our code. 
-The project can also be expanded in other phases
+The project can also be expanded in other phases.
+
+The project also used JavaScript to design Carousel.
+The website is fully responsive and can be run on all browsers  
