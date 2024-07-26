@@ -1,2 +1,2 @@
-# html-css-projects
+# Html Css Projects
 A repository contains Html and Css Projects 
